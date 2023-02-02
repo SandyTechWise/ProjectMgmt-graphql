@@ -14,3 +14,54 @@ Setup Environment Variable in .env file for the below :
 
 MongoDB Name : ProjMgmt DB.
 
+
+// Mutation Part
+// To Add Client
+mutation {
+  addClient(name: "Captain America", email: "steverogers@gmail.com", phone: "0909090909") {
+    id
+    name
+    email
+    phone
+  }
+}
+
+// To Delete Client:
+mutation {
+  deleteClient(id: "63dc1c7345b49eac5e244663") {
+    name
+    email
+    phone
+  }
+}
+
+//To Add Project
+mutation {
+  addProject(name: "save world", description: "destroy the evil plan and save the world", status: new, clientId: "63dc1267a83192e364a244d4") {
+    name
+    description
+    status
+  }
+}
+
+// To see project with client details
+{
+  projects {
+    name
+    status
+    client {
+      name
+      email
+    }
+  }
+}
+
+// To Delete Project - this will delete the clientId based on clientId.
+mutation {
+	deleteProject(id: "63dc2a127b5fa03982cd89cc"){
+    id
+    name
+  }
+}
+
+

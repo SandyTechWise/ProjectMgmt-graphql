@@ -64,4 +64,11 @@ mutation {
   }
 }
 
+// To Update the Project
+mutation {
+  updateProject(id: "63dc25bdf55e017b9e24e563", name: "saved the world", status: completed){
+    name
+    status
+  }
+}
 

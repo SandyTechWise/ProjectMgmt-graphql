@@ -38,7 +38,7 @@ Server Details
   a) connect MongoDB.
   b) use GraphQL.  
 
-
+```
 
 // Get Clients details
 clients {
@@ -104,6 +104,7 @@ mutation {
     status
   }
 }
+```
 
 -------------------------------------------------------------------------------------------------
 

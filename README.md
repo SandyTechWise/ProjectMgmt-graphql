@@ -1,8 +1,8 @@
 Tried this project to learn the graphql and followed the Traversy Media: 
 Youtube Link: https://www.youtube.com/watch?v=BcLNfwF04Kw&ab_channel=TraversyMedia
 
-To run the Server : npm run dev
-To start the Client : npm start
+To run the Server : `npm run dev`
+To start the Client : `npm start`
 
 
 SERVER PART
@@ -11,9 +11,9 @@ SERVER PART
 Built this project with MERN Stack.
 GraphQL : https://graphql.org/graphql-js/running-an-express-graphql-server/
 
-1. Create Package: "npm init -y"
-2. Install graphql: "npm install express express-graphql graphql mongoose cors colors"
-3. other dependencies(nodemon) and .env file : "npm i -D nodemon dotenv"
+1. Create Package: `npm init -y`
+2. Install graphql: `npm install express express-graphql graphql mongoose cors colors`
+3. other dependencies(nodemon) and .env file : `npm i -D nodemon dotenv`
 
 Setup Environment Variable in .env file for the below : 
 1. PORT

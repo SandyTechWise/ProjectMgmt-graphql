@@ -1,6 +1,14 @@
-To run the Project : npm run dev
+Tried this project to learn the graphql and followed the Traversy Media: 
+Youtube Link: https://www.youtube.com/watch?v=BcLNfwF04Kw&ab_channel=TraversyMedia
 
-Going to build this project with MERN Stack.
+To run the Server : npm run dev
+To start the Client : npm start
+
+
+SERVER PART
+------------
+
+Built this project with MERN Stack.
 GraphQL : https://graphql.org/graphql-js/running-an-express-graphql-server/
 
 1. Create Package: "npm init -y"
@@ -14,6 +22,31 @@ Setup Environment Variable in .env file for the below :
 
 MongoDB Name : ProjMgmt DB.
 
+Server Details
+1. Create graphql schema. Folder: schema -> schema.js
+  a) Create the types for the date.
+  b) Create the Root Query.
+  c) Add mutation.(Add, Update, Delete)
+
+2. Connect the MongoDB. Folder: config -> db.js 
+  a) Connect the MongoDB database with MongoDB URL.
+
+3. Create Models for the required. Folder: models -> Clinet.js, Project.js
+  a) model details - Data fields and types will be defined.
+
+4. Connect both graphql and mongo part. Folder: index.js
+  a) connect MongoDB.
+  b) use GraphQL.  
+
+
+
+// Get Clients details
+clients {
+  id,
+  name,
+  email,
+  phone
+}
 
 // Mutation Part
 // To Add Client
@@ -72,3 +105,13 @@ mutation {
   }
 }
 
+-------------------------------------------------------------------------------------------------
+
+CLIENT-PART
+------------
+
+1. Create React App for the UI inside the "clinet" Folder.
+    Command: "npx create-reat-app client"
+2. Install the dependencies.
+    Command: "npm install @apollo/client graphql react-router-dom react-icons"
+3. To start the app command: "npm start"
